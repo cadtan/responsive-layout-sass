@@ -32,24 +32,29 @@
 #contact {
 	& h3 {
 		@include text(1.2em, 1.6, 700);
-		margin: 2em 0;
+		margin: 2em 0 1em;
 	}
 
 	& p {
 		width: 50%;
+		margin: 0 auto;
 	}
 }
 
 .phone a,
 .email a {
 	&:link {
-	@include text(1em, 1.6, 700, $black);
-	padding-left: .8em;
+		@include text(1em, 1.6, 700, $black);
+		padding-left: .8em;
+		}
+
+	&:hover {
+	  color: $grey;
 	}
 
- 	&:hover {
-    color: $grey;
-  }
+	@media #{$brk-wide} {
+		display: inline-block;
+	}
 }
 
 .footer-name {

@@ -173,9 +173,10 @@ a:hover {
   font-size: 1.2em;
   line-height: 1.6;
   font-weight: 700;
-  margin: 2em 0; }
+  margin: 2em 0 1em; }
 #contact p {
-  width: 50%; }
+  width: 50%;
+  margin: 0 auto; }
 
 .phone a:link,
 .email a:link {
@@ -187,6 +188,10 @@ a:hover {
 .phone a:hover,
 .email a:hover {
   color: #878787; }
+@media (min-width: 1024px) {
+  .phone a,
+  .email a {
+    display: inline-block; } }
 
 .footer-name {
   font-size: 1.2em; }

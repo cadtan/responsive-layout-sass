@@ -14,7 +14,7 @@
 	@extend %centered;
 	@extend %clearfix;
 
-	@media #{$brk-wide} {
+	@include media(desktop) {
 		margin: 0 2%;
 		background-color: #fff;
 	}

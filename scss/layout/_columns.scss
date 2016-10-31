@@ -1,21 +1,21 @@
 .profile {
 	& img {
-		@media #{$brk-narrow} {
+		@include media(tablet) {
 			float: right;
 			margin-left: 3%;
 		}
 
-		@media #{$brk-wide} {
+		@include media(desktop) {
 			margin-left: 8%;
 		}
 	}
 
 	& p {
-		@media #{$brk-narrow} {
+		@include media(tablet) {
 			text-align: left;
 		}
 
-		@media #{$brk-wide} {
+		@include media(desktop) {
 			width: 40%;
 			max-width: 1150px;
 		}
@@ -24,30 +24,30 @@
 
 .gallery {
 	& li {
-		@media #{$brk-narrow} {
+		@include media(tablet) {
 			float: left;
 			width: 45%;
 			margin: 2.5%;
 		}
 
-		@media #{$brk-wide} {
+		@include media(desktop) {
 			float: left;
 			width: 28.3333%;
 		}
 	}
 
 	& li:nth-child(2n + 1) {
-		@media #{$brk-narrow} {
+		@include media(tablet) {
 		  clear: left;
 		}
 
-		@media #{$brk-wide} {
+		@include media(desktop) {
 			clear: none;
 		}
 	}
 
 	& li:nth-child(3n + 1) {
-		@media #{$brk-wide} {
+		@include media(desktop) {
 			clear: left;
 		}
 	}

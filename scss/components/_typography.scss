@@ -2,7 +2,7 @@
 	@include text(2.5em, 1.6, 700, $letter-spacing: -0.01em);
 	font-family: $stack-Roboto-Condensed;
 
-	@media #{$brk-wide} {
+	@include media(desktop) {
 		float: left;
 	}
 }
@@ -52,7 +52,7 @@
 	  color: $grey;
 	}
 
-	@media #{$brk-wide} {
+	@include media(desktop) {
 		display: inline-block;
 	}
 }

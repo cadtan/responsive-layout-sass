@@ -8,17 +8,17 @@
 	&-nav {
 		@extend %clearfix;
 		
-		@media #{$brk-wide} {
+		@include media(desktop) {
 			padding: 0 1.6%;
 		}
 	}
 
 	&-nav ul {
-		@media #{$brk-narrow} {
+		@include media(tablet) {
 			display: inline-block;
 		}
 
-		@media #{$brk-wide} {
+		@include media(desktop) {
 			float: right;
 			padding-top: 1em;
 		}
@@ -29,16 +29,16 @@
 	  padding: .8em;
 	  margin-bottom: 10px;
 
-	  @media #{$brk-narrow} {
-	  	float: left;
-	  	margin: .5em 2em 0 0;
-	  	padding: 0;
-	  	background-color: transparent;
+	 @include media(tablet) {
+  	float: left;
+  	margin: .5em 2em 0 0;
+  	padding: 0;
+  	background-color: transparent;
 	  }
 	}
 
 	&-nav li:last-child {
-		@media #{$brk-narrow} {
+		@include media(tablet) {
 			margin-right: 0;
 		}
 	}

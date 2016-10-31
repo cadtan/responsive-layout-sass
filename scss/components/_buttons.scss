@@ -1,7 +1,7 @@
 .back-to-top {
 	float: right;
 
-	@media #{$brk-narrow} {
+	@include media(tablet) {
 		display: none;
 	}
 }

@@ -22,7 +22,11 @@ $stack-sans-serif 		: Helvetica, Arial, sans-serif;
 $stack-Roboto 			: 'Roboto', $stack-sans-serif;
 $stack-Roboto-Condensed : 'Roboto Condensed', $stack-sans-serif;
 
+
 // Media query breakpoints
 
-$brk-narrow	: '(min-width: 768px)';
-$brk-wide	: '(min-width: 1024px)';
+$brk-medium	: 768px;
+$brk-large	: 1024px;
+
+
+

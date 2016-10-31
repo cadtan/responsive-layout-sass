@@ -1,0 +1,10 @@
+.back-to-top {
+	float: right;
+
+	@media #{$brk-narrow} {
+		display: none;
+	}
+}
+
+
+

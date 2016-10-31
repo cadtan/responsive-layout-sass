@@ -1,0 +1,46 @@
+.main {
+	&-header {
+		@extend %centered;
+		@extend %clearfix;
+		background-color: $color-background;
+	}
+
+	&-nav {
+		@extend %clearfix;
+		
+		@media #{$brk-wide} {
+			padding: 0 1.6%;
+		}
+	}
+
+	&-nav ul {
+		@media #{$brk-narrow} {
+			display: inline-block;
+		}
+
+		@media #{$brk-wide} {
+			float: right;
+			padding-top: 1em;
+		}
+	}
+
+	&-nav li {
+	  background-color: $white;
+	  padding: .8em;
+	  margin-bottom: 10px;
+
+	  @media #{$brk-narrow} {
+	  	float: left;
+	  	margin: .5em 2em 0 0;
+	  	padding: 0;
+	  	background-color: transparent;
+	  }
+	}
+
+	&-nav li:last-child {
+		@media #{$brk-narrow} {
+			margin-right: 0;
+		}
+	}
+}
+

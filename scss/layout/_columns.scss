@@ -1,0 +1,56 @@
+.profile {
+	& img {
+		@media #{$brk-narrow} {
+			float: right;
+			margin-left: 3%;
+		}
+
+		@media #{$brk-wide} {
+			margin-left: 8%;
+		}
+	}
+
+	& p {
+		@media #{$brk-narrow} {
+			text-align: left;
+		}
+
+		@media #{$brk-wide} {
+			width: 40%;
+			max-width: 1150px;
+		}
+	}
+} 
+
+.gallery {
+	& li {
+		@media #{$brk-narrow} {
+			float: left;
+			width: 45%;
+			margin: 2.5%;
+		}
+
+		@media #{$brk-wide} {
+			float: left;
+			width: 28.3333%;
+		}
+	}
+
+	& li:nth-child(2n + 1) {
+		@media #{$brk-narrow} {
+		  clear: left;
+		}
+
+		@media #{$brk-wide} {
+			clear: none;
+		}
+	}
+
+	& li:nth-child(3n + 1) {
+		@media #{$brk-wide} {
+			clear: left;
+		}
+	}
+}
+
+
